@@ -23,7 +23,7 @@ BluetoothSerial SerialBT; //this is a BluetoothSerial object, testing bluetooth 
 void setup(void) {
   Serial.begin(115200);
   while (!Serial) {
-    delay(10); // will pause Zero, Leonardo, etc until serial console opens
+    delay(10); // will pause until serial console opens
   }
 
   SerialBT.begin("ESP32_BT"); //This will be the name of the ESP32 device for Bluetooth connection.
